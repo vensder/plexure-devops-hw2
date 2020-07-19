@@ -1,0 +1,7 @@
+---
+- hosts: webservers
+  become: true
+  roles:
+    - apache
+  vars:
+    - doc_root: /var/www/html
