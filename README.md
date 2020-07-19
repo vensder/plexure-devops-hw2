@@ -17,9 +17,9 @@ In the Public subnet, we have Internet Gateway, Elastic Load Balancer, NAT Gatew
 
 ![The Diagram](./img/diagram.png?raw=true)
 
-To install Apache Web server and run it with custom web page we pass the script to the User data for the EC2 (see ec2.tf file):
+To install Apache Web server and run it with custom web page we pass the script to the User data for the EC2 (see `ec2.tf` file):
 
-```bash
+```sh
 #!/usr/bin/env bash
 sudo apt-get update
 sudo apt-get -y install apache2
