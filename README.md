@@ -1,6 +1,6 @@
 # Task 2 (IaC)
 
-![Terraform](https://github.com/vensder/plexure-devops-hw2/workflows/Terraform/badge.svg)
+[![Terraform](https://github.com/vensder/plexure-devops-hw2/workflows/Terraform/badge.svg)](https://github.com/vensder/plexure-devops-hw2/actions?query=workflow%3ATerraform)
 
 Write a Terraform Template or ARM Template to provision a VM machine in Azure or AWS cloud with an apache web server installed on it and the index page should print "Hello Plexure!" on the Browser, the VM Provisioned should be tagged as "Web Server" and should run behind a Load Balancer.
 
