@@ -6,6 +6,10 @@ output "jump_host_public_ip" {
   value = aws_instance.jump_host.public_ip
 }
 
+output "jump_host_public_name" {
+  value = aws_instance.jump_host.public_dns
+}
+
 output "elb_hostname" {
   value = aws_elb.plexure_elb.dns_name
 }

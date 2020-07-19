@@ -1,0 +1,25 @@
+---
+- name: Update apt
+  apt:
+    update_cache: yes
+
+- name: Install Apache
+  apt:
+    name: apache2
+    state: latest
+
+- name: Create custom document root
+  file:
+    path: '{{ doc_root }}'
+    state: directory 
+    owner: www-data 
+    group: www-data
+
+- name: Set up HTML file
+  copy:
+    src: index.html
+    dest: '{{ doc_root }}/index.html' 
+    owner: www-data 
+    group: www-data 
+    mode: "0644"
+  notify: restart apache

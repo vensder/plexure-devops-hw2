@@ -1,0 +1,5 @@
+[webservers]
+10.20.1.164 ansible_user=ubuntu
+
+[jumphosts]
+x.x.x.x ansible_user=ubuntu

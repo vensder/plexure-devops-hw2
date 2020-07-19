@@ -5,12 +5,14 @@ on:
     paths-ignore: 
     - 'README.*'
     - 'img/**'
+    - 'ansible'
     branches:
     - master
   pull_request:
     paths-ignore: 
     - 'README.*'
     - 'img/**'
+    - 'ansible'
     branches: [ master ]
 
 jobs:
