@@ -36,7 +36,7 @@ To apply templates to your infrastructure export AWS KEY and Secret to the envir
 
 ```sh
 export AWS_ACCESS_KEY_ID='XXX..........'
-export AWS_SECRET_ACCESS_KEY='T7x........'
+export AWS_SECRET_ACCESS_KEY='XXx........'
 ```
 
 Then run terraform commands:
